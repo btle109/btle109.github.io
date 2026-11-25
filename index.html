@@ -163,16 +163,8 @@
         ];
 
         function goToRandomLink() {
-            // 2. Pick a random index from the array
             const randomIndex = Math.floor(Math.random() * links.length);
-            
-            // 3. Get the URL matching that random index
-            const randomUrl = links[randomIndex];
-            
-            // 4. Open the link in the same tab
-            //window.location.href = randomUrl;
-            
-            // ALTERNATIVE: Open in a new tab instead? Uncomment the line below:
+            const randomUrl = links[randomIndex];     
             window.open(randomUrl, '_blank');
         }
     </script>
